@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #CCC9DC;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.nav a:hover {
+  color: #0C1821;
+  transform: scale(1.1);
+}
+
+.quote-button {
+  background-color: #1B2A41;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 12px;
+}

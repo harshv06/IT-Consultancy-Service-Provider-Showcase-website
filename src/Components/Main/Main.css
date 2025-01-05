@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'BarlowMedium';
+    src: url('../../fonts/Barlow/Barlow-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Thin';
+    src: url('../../fonts/Barlow/Barlow-Thin.ttf') format('truetype');
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh; /* Full screen height */
+    padding: 0 50px; /* Horizontal padding */
+    background-color: #324A5F;
+  }
+  
+  .hero-text {
+    flex: 1;
+    color: #ede7e7;
+    font-weight: 500;
+    max-width: 50%;
+  }
+  
+  .hero-text h2 {
+    font-family: 'BarlowMedium', sans-serif;
+    font-weight: 500;
+    font-size: 3rem; /* Larger font size */
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    color: #ede7e7;
+    font-weight: 100;
+    font-family: 'Thin', sans-serif;
+    font-size: 1.25rem; /* Adjusted font size */
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Aligns image to the right */
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+  }
+
+  .about {
+    display: flex;
+    padding: 50px;
+    background-color: #CCC9DC;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .support button {
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'BarlowMedium', sans-serif;
+  }
+  
+  .progress {
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .progress-fill {
+    background-color: #00a86b;
+    height: 10px;
+  }

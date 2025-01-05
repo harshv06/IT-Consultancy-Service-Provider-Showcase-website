@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./fonts/Outfit-Regular.ttf') format('truetype');
+  }
+  
+  .App {
+    font-family: Arial, sans-serif;
+    min-width: 100%;
+    background-color: #324A5F;
+  }
+  
+  
