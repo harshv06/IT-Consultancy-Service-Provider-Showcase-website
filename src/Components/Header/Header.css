@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../../fonts/Outfit-Light.ttf') format('truetype');
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -10,20 +14,29 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.header.scrolled {
+  background-color: rgba(204, 201, 220, 0.9); /* Add overlay effect */
+}
+
 .logo {
   font-family: 'MyCustomFont', sans-serif;
-  font-size: 38px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
+.nav {
+  display: flex;
+  transition: max-height 0.3s ease;
+}
+
 .nav a {
-  margin: 0 10px;
+  margin: 0 20px;
   text-decoration: none;
   color: #333;
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block;
   font-family: 'MyCustomFont', sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 200;
 }
 
@@ -40,5 +53,55 @@
   border-radius: 20px;
   cursor: pointer;
   font-family: 'MyCustomFont', sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
+  font-weight: 100;
+  margin-right: 1vw;
+}
+
+.ri-menu-3-line {
+  display: none; /* Hide by default */
+  font-size: 24px; /* Adjust size as needed */
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 95%; /* Adjust based on header height */
+    left: 0;
+    background-color: #CCC9DC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.4s ease;
+  }
+
+  .nav a{
+    /* margin-left: 30%; */
+    margin: 0px 0px;
+    padding: 20px 20px;
+    width: 100%;
+  }
+
+  .nav.open {
+    max-height: 500px; /* Adjust based on content */
+  }
+
+  .ri-menu-3-line {
+    display: block; /* Show in mobile view */
+  }
+
+  .quote-button {
+    display: none;
+  }
+
+  .nav a:hover {
+    color: #53a0da;
+    transform: scale(1);
+  }
+
 }
