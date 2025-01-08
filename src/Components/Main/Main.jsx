@@ -1,6 +1,8 @@
 import React from "react";
 import "./Main.css";
 import BG1 from "../../assets/bg1.png";
+// import '../Cards/Informative_Card.jsx'
+import Card from "../Cards/Card.jsx";
 
 const Main = () => {
   return (
@@ -23,38 +25,26 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="about">
-        <div className="about-image">
-          <img src="tech-expert.jpg" alt="Tech Expert" />
+      <section className="Scroll">
+        <div className="LeftContainer">
+          <img src={BG1} alt="Tech Expert" />
         </div>
-        <div className="about-text">
-          <h3>About Us</h3>
-          <h2>Transforming Ideas into Reality</h2>
-          <p>
-            We specialize in delivering innovative tech solutions tailored to
-            your business needs, ensuring seamless integration and exceptional
-            results.
-          </p>
-          <div className="support">
-            <button>Technical Support</button>
-            <button>Quality Support</button>
-          </div>
-          <div className="progress">
-            <div>
-              Project Success Rate <span>95%</span>
-            </div>
-            <div className="progress-bar">
-              <div className="progress-fill" style={{ width: "95%" }}></div>
-            </div>
-            <div>
-              Client Satisfaction <span>98%</span>
-            </div>
-            <div className="progress-bar">
-              <div className="progress-fill" style={{ width: "98%" }}></div>
-            </div>
-          </div>
+        <div className="RightContainer">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            distinctio eius necessitatibus provident eveniet quaerat ipsum
+            cumque expedita. Magnam voluptatem iusto blanditiis, odio vitae
+            dicta sequi similique illo vel harum!
+          </h2>
         </div>
       </section>
+
+      <div className="Cards">
+        <Card />
+        <Card />
+        <Card />  
+        
+      </div>
     </main>
   );
 };

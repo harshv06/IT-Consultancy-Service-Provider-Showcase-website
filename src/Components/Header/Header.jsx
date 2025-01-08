@@ -26,7 +26,7 @@ const Header = () => {
         <a href="#contact">Contact</a>
       </nav>
       <i className="ri-menu-3-line"></i>
-      <button className="quote-button">Get a quote</button>
+      <div className="quote-button">Get a quote</div>
     </header>
   );
 };
