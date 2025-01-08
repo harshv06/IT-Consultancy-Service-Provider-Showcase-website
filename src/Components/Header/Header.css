@@ -1,27 +1,29 @@
 @font-face {
-  font-family: 'MyCustomFont';
-  src: url('../../fonts/Outfit-Light.ttf') format('truetype');
+  font-family: "MyCustomFont";
+  src: url("../../fonts/Outfit-Light.ttf") format("truetype");
 }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #CCC9DC;
+  background-color: #ccc9dc;
   position: fixed;
   width: 100vw;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 30px;
+  transition: background-color 0.3s ease;
+  height: 3vh;
 }
 
 .header.scrolled {
-  background-color: rgba(146, 142, 166, 0.9); /* Add overlay effect */
+  background-color: rgba(146, 142, 166, 0.9);
 }
 
 .logo {
-  font-family: 'MyCustomFont', sans-serif;
+  font-family: "MyCustomFont", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -37,13 +39,13 @@
   color: #333;
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block;
-  font-family: 'MyCustomFont', sans-serif;
+  font-family: "MyCustomFont", sans-serif;
   font-size: 1.2rem;
   font-weight: 200;
 }
 
 .nav a:hover {
-  color: #0C1821;
+  color: #0c1821;
   transform: scale(1.1);
   border-width: 0px 0px 2px 0px;
   border-color: #fff;
@@ -51,47 +53,33 @@
 }
 
 .quote-button {
-  background-color: #CCC9DC;
+  background-color: #ccc9dc;
   color: #000;
   margin-right: 4vw;
   border-color: #fff;
-  border-width: 2px 2px 2px 2px;
+  border-width: 2px;
   border-style: solid;
   padding: 10px 20px;
   border-radius: 30px;
   box-shadow: 0px 0px 2px #dd3535;
   cursor: pointer;
-  font-family: 'MyCustomFont', sans-serif;
+  font-family: "MyCustomFont", sans-serif;
   font-size: 1rem;
   font-weight: 100;
 }
 
-.quote-button:hover{
-  transform: scale(1.1);
-  background-color: #324a5f ;
+.quote-button:hover {
+  /* transform: scale(1.1); */
+  background-color: #324a5f;
   box-shadow: 0px 0px 0px #dd3535;
   border: none;
+  transition: background-color 0.5s linear;
   color: #fff;
-  font-family: 'MyCustomFont', sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
 }
-/* .quote-button {
-  background-color: #1B2A41;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-family: 'MyCustomFont', sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
-  margin-right: 3vw;
-} */
 
 .ri-menu-3-line {
-  display: none; /* Hide by default */
-  font-size: 24px; /* Adjust size as needed */
+  display: none;
+  font-size: 24px;
   cursor: pointer;
 }
 
@@ -104,35 +92,37 @@
     overflow: hidden;
     width: 100%;
     position: absolute;
-    top: 95%; /* Adjust based on header height */
+    top: 6vh;
     left: 0;
-    background-color: #CCC9DC;
+    background-color: #ccc9dc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: max-height 0.4s ease;
   }
 
-  .nav a{
-    /* margin-left: 30%; */
-    margin: 0px 0px;
-    padding: 20px 20px;
-    width: 100%;
-  }
-
   .nav.open {
-    max-height: 500px; /* Adjust based on content */
+    max-height: 500px;
   }
 
   .ri-menu-3-line {
-    display: block; /* Show in mobile view */
+    display: block;
+    margin-right: 10vw;
   }
 
   .quote-button {
     display: none;
   }
 
+  .nav a {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+  }
+
   .nav a:hover {
     color: #53a0da;
     transform: scale(1);
+    border: none;
   }
+
 
 }
