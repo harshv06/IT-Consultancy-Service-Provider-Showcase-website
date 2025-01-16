@@ -3,6 +3,7 @@ import "./Main.css";
 import BG1 from "../../assets/bg1.png";
 // import '../Cards/Informative_Card.jsx'
 import Card from "../Cards/Card.jsx";
+import Section2 from "./Section2.jsx";
 
 const Main = () => {
   return (
@@ -27,9 +28,10 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="Scroll">
+      <Section2/>
+      {/* <section className="Scroll">
         <div className="RightContainer">
-          <h2>
+          <h2>  
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
             distinctio eius necessitatibus provident eveniet quaerat ipsum
             cumque expedita. Magnam voluptatem iusto blanditiis, odio vitae
@@ -39,7 +41,7 @@ const Main = () => {
         <div className="LeftContainer">
           <img src={BG1} alt="Tech Expert" />
         </div>
-      </section>
+      </section> */}
 
       {/* <div className="Cards">
         <Card />

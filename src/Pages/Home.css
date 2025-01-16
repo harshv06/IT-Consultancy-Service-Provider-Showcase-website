@@ -9,5 +9,13 @@
     background-color: #324A5F;
     width: 100%;
   }
+
+body::-webkit-scrollbar{
+    width: 3px;
+  }
+
+  .App::-webkit-scrollbar-thumb{
+    background-color: #324A5F;
+  }
   
   

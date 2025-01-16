@@ -9,12 +9,39 @@ function Section2() {
         <img src={BG1} alt="Tech Expert" />
       </div>
       <div className="RightContainer">
-        <h2>
+        <div className="item">
+        <p className="Text">
+            Advanced Technological Solutions for Your Business Needs. Our team of 
+            experts is dedicated to delivering cutting-edge technology solutions 
+            that empower businesses to thrive in the digital age. Whether you're 
+            looking to optimize your operations, enhance your customer experience, 
+            or expand your reach, we have the expertise and innovation to help you 
+            achieve your business goals. Contact us today to learn more about our 
+            services and how we can help you succeed in the digital world.
+        </p>
+        </div>
+        <div className="item">
+        <p className="Text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
           distinctio eius necessitatibus provident eveniet quaerat ipsum cumque
           expedita. Magnam voluptatem iusto blanditiis, odio vitae dicta sequi
           similique illo vel harum!
-        </h2>
+        </p>
+        </div>
+        <div className="item">
+        <p className="Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+          distinctio eius necessitatibus provident eveniet quaerat ipsum cumque
+          expedita. Magnam voluptatem iusto blanditiis, odio vitae dicta sequi
+          similique illo vel harum!
+        </p>
+        </div>
+        {/* <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+          distinctio eius necessitatibus provident eveniet quaerat ipsum cumque
+          expedita. Magnam voluptatem iusto blanditiis, odio vitae dicta sequi
+          similique illo vel harum!
+        </h2> */}
       </div>
     </section>
   );
