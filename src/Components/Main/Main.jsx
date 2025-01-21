@@ -4,6 +4,7 @@ import BG1 from "../../assets/bg1.png";
 // import '../Cards/Informative_Card.jsx'
 import Card from "../Cards/Card.jsx";
 import Section2 from "./Section2.jsx";
+import Section3 from "./Section3.jsx";
 
 const Main = () => {
   return (
@@ -29,26 +30,7 @@ const Main = () => {
       </section>
 
       <Section2/>
-      {/* <section className="Scroll">
-        <div className="RightContainer">
-          <h2>  
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            distinctio eius necessitatibus provident eveniet quaerat ipsum
-            cumque expedita. Magnam voluptatem iusto blanditiis, odio vitae
-            dicta sequi similique illo vel harum!
-          </h2>
-        </div>
-        <div className="LeftContainer">
-          <img src={BG1} alt="Tech Expert" />
-        </div>
-      </section> */}
-
-      {/* <div className="Cards">
-        <Card />
-        <Card />
-        <Card />  
-        
-      </div> */}
+      <Section3/>
     </main>
   );
 };

@@ -1,10 +1,31 @@
 import React from "react";
-import BG1 from '../../assets/bg2.jpg'
-import './Section3.css'
+import BG1 from "../../assets/bg2.jpg";
+import "./Section3.css";
 function Section3() {
+  const data = [
+    { id: "1", Title: "Main1", Description: "Done" },
+    { id: "2", Title: "Main2", Description: "Done" },
+    { id: "3", Title: "Main3", Description: "Done" },
+    { id: "4", Title: "Main4", Description: "Done" },
+    { id: "4", Title: "Main4", Description: "Done" },
+    { id: "4", Title: "Main4", Description: "Done" },
+  ];
+
+  const CustomCard = ({ data }) => {
+    console.log(data);
+    return (
+      <div className="CardsContainer">
+        <div className="Title">
+          <p>{data.Description}</p>
+        </div>
+        {/* {data.Title} */}
+      </div>
+    );
+  };
+
   return (
     <div className="ContainerSection3">
-      <div className="Text">
+      <div className="TextBox">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid error,
         perferendis eaque maxime ut quos eligendi voluptatum amet iure itaque,
         ad qui? Aperiam beatae hic quam? Culpa iusto obcaecati libero expedita
@@ -18,7 +39,11 @@ function Section3() {
         deserunt, facere repudiandae quia ut.
       </div>
 
-      <img src={BG1} className="Image"/>
+      <div className="CardsBox">
+        {data.map((item) => (
+          <CustomCard key={item.id} data={item} />
+        ))}
+      </div>
     </div>
   );
 }
