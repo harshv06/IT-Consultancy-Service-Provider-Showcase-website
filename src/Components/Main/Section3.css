@@ -1,5 +1,37 @@
-
 .ContainerSection3 {
-    height: 90vh;  
+    height: 100vh;  
     background-color: aqua;
+    display: grid;
+    grid-template-rows: 30% 70%;
+  } 
+
+  .TextBox{
+    height: 100%;
+    background-color: beige;
+  }
+
+      
+  .CardsBox{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .CardsBox::-webkit-scrollbar{
+    height: 10px;
+  }
+  .CardsBox::-webkit-scrollbar-thumb{
+    background-color: #324A5F;
+  }
+  .CardsContainer{
+    flex-shrink: 0;
+    background-color: aliceblue;
+    height: 50%;
+    width: 30%;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 3px black;
+    margin: 15px 10px;
+    border-radius: 50px;
   }

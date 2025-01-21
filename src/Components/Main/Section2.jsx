@@ -13,11 +13,7 @@ function Section2() {
         <p className="Text">
             Advanced Technological Solutions for Your Business Needs. Our team of 
             experts is dedicated to delivering cutting-edge technology solutions 
-            that empower businesses to thrive in the digital age. Whether you're 
-            looking to optimize your operations, enhance your customer experience, 
-            or expand your reach, we have the expertise and innovation to help you 
-            achieve your business goals. Contact us today to learn more about our 
-            services and how we can help you succeed in the digital world.
+            that empower businesses to thrive in the digital age.
         </p>
         </div>
         <div className="item">
