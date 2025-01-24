@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../../fonts/Outfit-Light.ttf") format("truetype");
+}
+
 .ContainerSection3 {
     height: 100vh;  
     background-color: aqua;
     display: grid;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 50% 50%;
+
   } 
 
   .TextBox{
@@ -10,28 +16,52 @@
     background-color: beige;
   }
 
-      
+  .TextBox_Text{
+    font-size: 1.5rem;
+    line-height: 5vh;
+    padding: 3vw;
+    text-align: center;
+    font-family: 'MyCustomFont';
+  }
+
   .CardsBox{
     height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
+    background-color: antiquewhite;
   }
 
   .CardsBox::-webkit-scrollbar{
-    height: 10px;
+    height: 5px;
+    /* background-color: #324A5F; */
   }
   .CardsBox::-webkit-scrollbar-thumb{
     background-color: #324A5F;
   }
-  .CardsContainer{
+  .CardContainer {
     flex-shrink: 0;
-    background-color: aliceblue;
-    height: 50%;
+    background-color: rgba(255, 255, 255, 0.753);
+    height: 90%;
     width: 30%;
-    /* border: 1px solid black; */
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 1px 0.30px rgb(208, 206, 206);
     margin: 15px 10px;
-    border-radius: 50px;
+    border-radius: 30px;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
   }
+  
+  .CardContainer.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .CardTitle{
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'MyCustomFont';
+    font-weight: 400;
+  }
+
