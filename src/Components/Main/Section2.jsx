@@ -10,27 +10,24 @@ function Section2() {
       </div>
       <div className="RightContainer">
         <div className="item">
-        <p className="Text">
-            Advanced Technological Solutions for Your Business Needs. Our team of 
-            experts is dedicated to delivering cutting-edge technology solutions 
-            that empower businesses to thrive in the digital age.
-        </p>
+          <p className="Text">
+            Transform Your Business with Advanced Tech! Our specialists provide
+            the latest solutions to drive your success in the digital world.
+          </p>
         </div>
         <div className="item">
-        <p className="Text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          distinctio eius necessitatibus provident eveniet quaerat ipsum cumque
-          expedita. Magnam voluptatem iusto blanditiis, odio vitae dicta sequi
-          similique illo vel harum!
-        </p>
+          <p className="Text">
+            Harness the Power of Smart Technology! Discover advanced tools
+            designed to streamline operations and sharpen your competitive edge
+            in the digital landscape.
+          </p>
         </div>
         <div className="item">
-        <p className="Text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          distinctio eius necessitatibus provident eveniet quaerat ipsum cumque
-          expedita. Magnam voluptatem iusto blanditiis, odio vitae dicta sequi
-          similique illo vel harum!
-        </p>
+          <p className="Text">
+            Unlock New Possibilities with Smart Tech Solutions! Our dedicated
+            team offers the most advanced tools to streamline operations and
+            enhance your competitive edge in the digital realm.
+          </p>
         </div>
         {/* <h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque

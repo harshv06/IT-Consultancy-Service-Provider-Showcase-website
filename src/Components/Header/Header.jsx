@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
-      <div className="logo">INNOVATIA TECH</div>
+      <div className="logo">Celsystech</div>
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
